@@ -1,0 +1,67 @@
+{
+	"taqueros": [
+		{
+			"name": "taquero juan",
+			"tacos_until_break": "number",
+			"queues": {
+				"main_queue": [],
+				"priority_queue": []
+			},
+			"actions": [{ "order_index": "number", "action": "action" }],
+			"fillings": {
+				"cebolla": "number",
+				"cilantro": "number",
+				"salsa": "number"
+			},
+			"status": "REST|WORKING|NEEDSFILL"
+		},
+		{
+			"name": "taquero juan",
+			"tacos_until_break": "number",
+			"queues": {
+				"main_queue": [],
+				"priority_queue": []
+			},
+			"actions": [{ "order_index": "number", "action": "action" }],
+			"fillings": {
+				"cebolla": "number",
+				"cilantro": "number",
+				"salsa": "number"
+			},
+			"status": "REST|WORKING|NEEDSFILL"
+		},
+		{
+			"name": "taquero juan",
+			"tacos_until_break": "number",
+			"queues": {
+				"main_queue": [],
+				"priority_queue": []
+			},
+			"actions": [{ "order_index": "number", "action": "action" }],
+			"fillings": {
+				"cebolla": "number",
+				"cilantro": "number",
+				"salsa": "number"
+			},
+			"status": "REST|WORKING|NEEDSFILL"
+		}
+	],
+	"chalanes": [
+		{
+			"name": "taquero juan",
+			"actions": [{"action": ""}, {"action": ""}],
+			"status": "REST|WORKING|NEXTACTION?"
+		},  
+        {
+			"name": "taquero juan y fulano",
+			"actions": [{"action": ""}, {"action": ""}],
+			"status": "REST|WORKING|NEXTACTION?"
+		}
+	],
+	"metadata": {
+		"tacos": "number",
+		"throughput": "number",
+		"average_wait_time": "number",
+		"ventiladores": [{ "id": "number", "time_window": [] }, {}, {}]
+	}
+}
