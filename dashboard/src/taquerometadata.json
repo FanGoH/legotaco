@@ -7,9 +7,9 @@
 				"main_queue": [],
 				"priority_queue": []
 			},
-			"actions": [{ "order_index": "number", "action": "action" }],
+			"actions": [{ "order_index": "10", "action": "Descripcion" }],
 			"fillings": {
-				"cebolla": "number",
+				"cebolla": "numbers",
 				"cilantro": "number",
 				"salsa": "number"
 			},
@@ -48,13 +48,13 @@
 	],
 	"chalanes": [
 		{
-			"name": "taquero juan",
-			"actions": [{"action": ""}, {"action": ""}],
+			"name": "taquero juancho y merengano",
+			"actions": [{ "action": "" }, { "action": "" }],
 			"status": "REST|WORKING|NEXTACTION?"
-		},  
-        {
+		},
+		{
 			"name": "taquero juan y fulano",
-			"actions": [{"action": ""}, {"action": ""}],
+			"actions": [{ "action": "" }, { "action": "" }],
 			"status": "REST|WORKING|NEXTACTION?"
 		}
 	],
@@ -62,6 +62,19 @@
 		"tacos": "number",
 		"throughput": "number",
 		"average_wait_time": "number",
-		"ventiladores": [{ "id": "number", "time_window": [] }, {}, {}]
+		"ventiladores": [
+			{
+				"id": "1",
+				"prendido": true
+			},
+			{
+				"id": "2",
+				"prendido": false
+			},
+			{
+				"id": "3",
+				"prendido": false
+			}
+		]
 	}
 }
