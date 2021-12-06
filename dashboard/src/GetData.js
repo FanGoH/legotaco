@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import orders from "./orden.json";
 import metadataInitial from "./taquerometadata.json";
+
+import RSocket from "reconnecting-websocket";
 
 import chalan1 from "./output/chalan/chalan-Chalan 1.json";
 import chalan2 from "./output/chalan/chalan-Chalan 2.json";
@@ -37,6 +39,14 @@ const useTacoSocket = () => {
 			],
 		},
 	});
+
+	const ws = useMemo(() => new RSocket("ws://localhost:8765/"), []);
+
+	useEffect(() => {
+		ws.onmessage = (evt) => {
+			//			console.log(evt.data);
+		};
+	}, []);
 
 	return { tacos, metadata };
 };
