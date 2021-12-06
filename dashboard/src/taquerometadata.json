@@ -16,7 +16,7 @@
 			"status": "REST|WORKING|NEEDSFILL"
 		},
 		{
-			"name": "taquero juan",
+			"name": "taquero pedro",
 			"tacos_until_break": "number",
 			"queues": {
 				"main_queue": [],
@@ -31,7 +31,7 @@
 			"status": "REST|WORKING|NEEDSFILL"
 		},
 		{
-			"name": "taquero juan",
+			"name": "taquero godinez",
 			"tacos_until_break": "number",
 			"queues": {
 				"main_queue": [],
