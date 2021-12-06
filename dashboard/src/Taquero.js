@@ -51,7 +51,7 @@ export const TaqueroDetail = ({ taqueros }) => {
 			<hr />
 			<h2>Descanso y ventilador</h2>
 			<ul>
-				{taquero.descanso.map((rest) => (
+				{taquero?.descanso.map((rest) => (
 					<p>
 						Se hizo: {rest.name} con {rest.duration}s, con{" "}
 						{rest.tacos}, a las {rest["time_stamp"]}

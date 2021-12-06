@@ -1,7 +1,7 @@
 import "./App.css";
 import { OrderDetail } from "./orderdetail";
 import { useData } from "./GetData";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { MainDashboard } from "./MainDashboard";
 import { TaqueroDetail } from "./Taquero";
 import { ChalanDetail } from "./Chalan";
@@ -14,6 +14,9 @@ const App = () => {
 		<div className='App'>
 			<header className='App-header'>
 				<Router>
+					<Link to='/'>Index</Link>
+					<Link to='/orders'>All orders</Link>
+
 					<Routes>
 						<Route
 							path='/'
